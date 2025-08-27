@@ -1,9 +1,0 @@
-VERSION:3 SOURCE_TIMESTAMP:58A2010C
-NODE:I LEVEL:0 LINE:1 "D:\Nhung\AVR16\BTL\LCD_lib.h"
-NODE:F LEVEL:0 LINE:3 "LCD_Init(void)"
-NODE:F LEVEL:0 LINE:16 "LCD_Cmd(unsigned char cmd)"
-NODE:F LEVEL:0 LINE:31 "LCD_Char(unsigned char data)"
-NODE:F LEVEL:0 LINE:46 "LCD_String(unsigned char * str)"
-NODE:F LEVEL:0 LINE:55 "LCD_String_xy(unsigned char row,unsigned char pos,unsigned char * str)"
-NODE:F LEVEL:0 LINE:64 "LCD_Clear(void)"
-NODE:F LEVEL:0 LINE:71 "LCD_Roll_Right(unsigned char times_roll)"
