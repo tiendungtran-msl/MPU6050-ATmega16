@@ -1,0 +1,63 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+previous_time                                                                     0x0176       4
+current_time                                                                      0x017A       4
+eslapsed_time                                                                     0x017E       4
+AccX                                                                              0x0182       4
+AccY                                                                              0x0186       4
+AccZ                                                                              0x018A       4
+Gyro_x                                                                            0x018E       4
+Gyro_y                                                                            0x0192       4
+Gyro_z                                                                            0x0196       4
+Temp                                                                              0x019A       4
+_seed (stdlib.lib)                                                                0x019E       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+time_count                                                                        R4,R5        2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+MPU6050_Init                                                                      0x00081     40
+MPU_Start_Loc                                                                     0x000A9     10
+Read_RawValue                                                                     0x000B3     99
+Roll_Acc                                                                          0x00116     21
+Pitch_Acc                                                                         0x0012B     35
+Angle_Gyr                                                                         0x0014E     91
+main                                                                              0x001A9    173
+LCD_Init                                                                          0x00256     19
+LCD_Cmd                                                                           0x00269     18
+LCD_Char                                                                          0x0027B     23
+LCD_String                                                                        0x00292     23
+LCD_String_xy                                                                     0x002A9     30
+I2C_Init                                                                          0x002C7     32
+I2C_Repeated_Start                                                                0x002E7     34
+I2C_Stop                                                                          0x00309      6
+I2C_Start_Wait                                                                    0x0030F     27
+I2C_Write                                                                         0x0032A     22
+I2C_Read_Ack                                                                      0x00340      6
+I2C_Read_Nack                                                                     0x00346      7
+timer1_ovf_isr                                                                    0x0034D     16
+timer1_init                                                                       0x0035D      9
+millis                                                                            0x00366      9
+millis_setup                                                                      0x0036F      3
+ftrunc                                                                            0x00372     49
+floor                                                                             0x003A3     18
+log                                                                               0x003B5    128
+exp                                                                               0x00435    152
+pow                                                                               0x004CD     78
+xatan                                                                             0x0051B     47
+yatan                                                                             0x0054A     62
+atan                                                                              0x00588     20
+put_buff_G101                                                                     0x0059C     56
+_print_G101                                                                       0x005D4    316
+sprintf                                                                           0x00710     54
+strlen                                                                            0x00746     12
+strlenf                                                                           0x00752     13

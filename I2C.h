@@ -1,0 +1,31 @@
+#ifndef _I2C_H_
+#define _I2C_H_
+
+#include "main.h"
+
+#define SCL_CLK 500000
+#define BITRATE(TWSR) ((f_OSC/SCL_CLK)-16)/(2*pow(4,(TWSR&((1<<TWPS0)|(1<<TWPS1)))))
+
+void I2C_Init();
+
+unsigned char I2C_Start_Wait(char write_address);
+
+unsigned char I2C_Repeated_Start(char read_address); /* I2C repeated start function */
+
+unsigned char I2C_Write(char data);	    /* I2C write function */
+
+char I2C_Read_Ack();		                        /* I2C read ack function */
+
+char I2C_Read_Nack();		    /* I2C read nack function */
+
+void I2C_Stop();			                        /* I2C stop function */
+
+void I2C_Slave_Init(unsigned char slave_address);
+
+unsigned char I2C_Slave_Listen();
+
+unsigned char I2C_Slave_Transmit(char data);
+
+char I2C_Slave_Receive();
+
+#endif

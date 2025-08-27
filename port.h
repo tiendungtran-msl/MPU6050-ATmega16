@@ -1,0 +1,12 @@
+#ifndef _PORT_H_
+#define _PORT_H_
+
+#define LCD_Dir DDRB
+#define LCD_Port PORTB
+#define RS PORTB.0
+#define EN PORTB.1
+
+#define SCL PORTC.0
+#define SDA PORTC.1
+
+#endif
